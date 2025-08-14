@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/infocon-app/static/css/main.b5bcc1b9.css",
+    "main.js": "/infocon-app/static/js/main.421a7147.js",
+    "static/media/Gemini_Generated_Image_mj50d8mj50d8mj50.png": "/infocon-app/static/media/Gemini_Generated_Image_mj50d8mj50d8mj50.0d03ae392efac7c7bc26.png",
+    "static/media/logo.png": "/infocon-app/static/media/logo.cf85b43cd1383b011f3b.png",
+    "index.html": "/infocon-app/index.html",
+    "main.b5bcc1b9.css.map": "/infocon-app/static/css/main.b5bcc1b9.css.map",
+    "main.421a7147.js.map": "/infocon-app/static/js/main.421a7147.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b5bcc1b9.css",
+    "static/js/main.421a7147.js"
+  ]
+}
