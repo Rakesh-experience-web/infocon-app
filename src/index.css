@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+            /* Font definitions */
+            @layer base {
+              :root {
+                --font-wagr: 'Orbitron', 'Wagr', monospace;
+                --font-unbounded: 'Unbounded', sans-serif;
+              }
+            }
+
+            body {
+              margin: 0;
+              font-family: var(--font-unbounded);
+              -webkit-font-smoothing: antialiased;
+              -moz-osx-font-smoothing: grayscale;
+              background: linear-gradient(135deg, #000428, #004e92, #001f3f);
+              background-size: 400% 400%;
+              animation: gradient-shift 15s ease infinite;
+              color: #e0f7fa;
+              min-height: 100vh;
+            }
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* Ace Editor Customization */
+.ace_editor {
+  border-radius: 0.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* Dropzone Customization */
+.react-dropzone {
+  border: 2px dashed rgba(255, 255, 255, 0.3);
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.react-dropzone:hover {
+  border-color: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.react-dropzone.accept {
+  border-color: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.react-dropzone.reject {
+  border-color: rgba(255, 0, 0, 0.6);
+  background: rgba(255, 0, 0, 0.1);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+/* Advanced Holographic Animations */
+@keyframes holographic-pulse {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes holographicGrid {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  100% {
+    transform: translateX(100px) translateY(100px);
+  }
+}
+
+@keyframes spin-slow {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes spin-slow-reverse {
+  from {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+}
+
+@keyframes holographic-scan {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.3);
+  }
+}
+
+@keyframes dataStream {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100vw);
+    opacity: 0;
+  }
+}
+
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Custom Animation Classes */
+.animate-holographic-pulse {
+  animation: holographic-pulse 4s ease-in-out infinite;
+}
+
+.animate-spin-slow {
+  animation: spin-slow 20s linear infinite;
+}
+
+.animate-spin-slow-reverse {
+  animation: spin-slow-reverse 15s linear infinite;
+}
+
+.animate-holographic-scan {
+  animation: holographic-scan 3s ease-in-out infinite;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-glow {
+  animation: glow 2s ease-in-out infinite;
+}
+
+.animate-data-stream {
+  animation: dataStream 4s linear infinite;
+}
+
+/* Glass Morphism Effect */
+.glass {
+  background: rgba(0, 30, 60, 0.5);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(0, 150, 255, 0.2);
+}
+
+/* Updated Holographic Cards */
+.holographic-card {
+  background: linear-gradient(135deg, rgba(0, 30, 60, 0.5) 0%, rgba(0, 60, 120, 0.3) 50%, rgba(0, 30, 60, 0.5) 100%);
+  border: 1px solid rgba(0, 150, 255, 0.3);
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.5),
+    inset 0 1px 0 rgba(0, 150, 255, 0.2),
+    0 0 0 1px rgba(0, 150, 255, 0.1);
+}
+
+.holographic-card:hover {
+  border-color: rgba(0, 200, 255, 0.5);
+  box-shadow: 
+    0 12px 40px rgba(0, 0, 0, 0.6),
+    inset 0 1px 0 rgba(0, 200, 255, 0.3),
+    0 0 0 1px rgba(0, 200, 255, 0.2),
+    0 0 20px rgba(0, 200, 255, 0.2);
+}
+
+/* Particle System */
+.particle {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+/* Data Stream Effect */
+.data-stream {
+  position: absolute;
+  width: 1px;
+  height: 100px;
+  background: linear-gradient(to bottom, transparent, rgba(255,255,255,0.3), transparent);
+  animation: dataStream 3s linear infinite;
+}
+
+/* Updated Holographic Text Effect */
+.holographic-text {
+  background: linear-gradient(45deg, #00c6ff, #0072ff, #00c6ff);
+  background-size: 200% 200%;
+  animation: holographic-pulse 3s ease-in-out infinite;
+}
+
+/* Updated Button Effects */
+.holographic-button {
+  background: linear-gradient(135deg, rgba(0, 30, 60, 0.5) 0%, rgba(0, 60, 120, 0.3) 100%);
+  border: 1px solid rgba(0, 150, 255, 0.3);
+}
+
+.holographic-button:hover {
+  background: linear-gradient(135deg, rgba(0, 60, 120, 0.5) 0%, rgba(0, 90, 180, 0.3) 100%);
+  border-color: rgba(0, 200, 255, 0.5);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* Loading Animation */
+.loading-holographic {
+  width: 40px;
+  height: 40px;
+  border: 2px solid rgba(255,255,255,0.1);
+  border-top: 2px solid rgba(255,255,255,0.8);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+/* Advanced Grid Pattern */
+.holographic-grid {
+  background-image: 
+    linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px);
+  background-size: 50px 50px;
+  animation: holographicGrid 10s linear infinite;
+}
+
+/* Glitch Effect */
+.glitch {
+  position: relative;
+}
+
+.glitch::before,
+.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.glitch::before {
+  animation: glitch-1 2s infinite;
+  color: #ff0000;
+  z-index: -1;
+}
+
+.glitch::after {
+  animation: glitch-2 2s infinite;
+  color: #00ff00;
+  z-index: -2;
+}
+
+@keyframes glitch-1 {
+  0%, 100% { transform: translate(0); }
+  20% { transform: translate(-2px, 2px); }
+  40% { transform: translate(-2px, -2px); }
+  60% { transform: translate(2px, 2px); }
+  80% { transform: translate(2px, -2px); }
+}
+
+@keyframes glitch-2 {
+  0%, 100% { transform: translate(0); }
+  20% { transform: translate(2px, -2px); }
+  40% { transform: translate(2px, 2px); }
+  60% { transform: translate(-2px, -2px); }
+  80% { transform: translate(-2px, 2px); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .holographic-card {
+    backdrop-filter: blur(10px);
+  }
+  
+  .animate-holographic-pulse {
+    animation-duration: 6s;
+  }
+}
